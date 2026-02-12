@@ -1,5 +1,7 @@
 # The Look E-commerce – BI Analysis (Power BI + BigQuery)
 
+[![Power BI interactive report](https://img.shields.io/badge/PowerBI-Live%20Dashboard-yellow?logo=powerbi)](https://app.powerbi.com/view?r=eyJrIjoiMmRhMGYwMjktYzY1OS00MTFiLWJmMWYtOTc0ZjZkN2Y1OWRjIiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9)
+
 **Power BI · DAX · BigQuery · SQL · Data Modeling**
 
 ## Business Context

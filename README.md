@@ -43,6 +43,16 @@ Relationships were configured using single-direction filtering (1 → *) to main
 
 ---
 
+## Dashboard Preview
+
+### Data Model
+![Data Model](screenshots/model_view.png)
+
+### Dashboard Overview
+![Dashboard Overview](screenshots/dashboard_overview.png)
+
+---
+
 ## Key Findings (from the dashboard)
 
 ### 1) Top Selling Categories & Cities

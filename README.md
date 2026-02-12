@@ -19,23 +19,27 @@ Dataset: https://www.kaggle.com/datasets/mustafakeser4/looker-ecommerce-bigquery
 
 ## Data Model
 
-The Power BI model follows a star-schema logic:
+The Power BI model follows a **constellation schema** (multi-fact star model) combining sales and web analytics data.  
+The central analytical fact table is `order_items`, supported by additional fact tables (`orders`, `events`, `inventory_items`) and shared dimensions.
 
-**Fact tables**
+**Primary Sales Fact**
 - `order_items` (sales at item level)
-- `orders` (order-level attributes, status, timestamps)
-- `events` (web activity / traffic source)
+
+**Supporting Fact Tables**
+- `orders` (order-level attributes, timestamps, status)
+- `events` (web traffic and user interactions)
+- `inventory_items` (inventory and logistics layer)
 
 **Dimension tables**
 - `products` (category, brand, retail_price)
 - `users` (geo, demographics, traffic_source)
-- `distribution_centers` (geo)
-- `calendar` (date table created via `CALENDARAUTO()`)
+- `distribution_centers` (logistics dimension)
+- `calendar` (date dimension created via `CALENDARAUTO()`)
+- `countries` (reference table for population and penetration analysis)
 
-Relationships were configured to support:
-- revenue aggregation by category, city and region
-- user-level analysis and geographic drill-down
-- comparison of traffic sources vs. purchases
+Time intelligence is driven by an active relationship between `calendar` and `orders (created_at)`, ensuring revenue analysis reflects order creation date rather than delivery date.
+
+Relationships were configured using single-direction filtering (1 → *) to maintain a clean and predictable filter context.
 
 ---
 

@@ -53,6 +53,15 @@ Relationships were configured using single-direction filtering (1 → *) to main
 
 ---
 
+## Repository structure
+
+- `/powerbi` – PDF export of the report
+- `/screenshots` – model view + dashboard preview
+- `/sql` – BigQuery SQL validation queries
+- `/docs` – documentation of key DAX measures
+
+---
+
 ## Key Findings (from the dashboard)
 
 ### 1) Top Selling Categories & Cities

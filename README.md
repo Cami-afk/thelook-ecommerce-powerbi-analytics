@@ -4,6 +4,15 @@
 
 **Power BI · DAX · BigQuery · SQL · Data Modeling**
 
+## Repository structure
+
+- `/powerbi` – PDF export of the report
+- `/screenshots` – model view + dashboard preview
+- `/sql` – BigQuery SQL validation queries
+- `/docs` – documentation of key DAX measures
+
+---
+
 ## Business Context
 
 This project uses multi-table e-commerce data (orders, order items, products, users, events, inventory and distribution centers) to identify revenue drivers, marketing channel effectiveness and geographic differences in performance.
@@ -47,15 +56,6 @@ Relationships were configured using single-direction filtering (1 → *) to main
 
 ### Dashboard Overview
 ![Dashboard Overview](screenshots/dashboard_overview.png)
-
----
-
-## Repository structure
-
-- `/powerbi` – PDF export of the report
-- `/screenshots` – model view + dashboard preview
-- `/sql` – BigQuery SQL validation queries
-- `/docs` – documentation of key DAX measures
 
 ---
 

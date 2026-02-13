@@ -8,10 +8,7 @@
 
 This project uses multi-table e-commerce data (orders, order items, products, users, events, inventory and distribution centers) to identify revenue drivers, marketing channel effectiveness and geographic differences in performance.
 
-The dashboard was designed as an executive-friendly decision tool with drill-down capability across:
-- product categories and cities
-- traffic sources and purchase behavior
-- customer value and market penetration by region
+The objective was to identify revenue concentration, channel efficiency and regional growth potential.
 
 Dataset: https://www.kaggle.com/datasets/mustafakeser4/looker-ecommerce-bigquery-dataset
 
@@ -137,7 +134,7 @@ CALCULATE(
 
 ## SQL (BigQuery) – validation example
 
-SQL was used to validate key aggregations and customer-level metrics before final visualization.
+SQL was used to validate KPI logic and ensure consistency between the semantic model and raw data aggregations.
 
 ```sql
 SELECT
